@@ -5,11 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "insta",
+            "cwd": "insta",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "type": "dart"
+        },
+        {
+            "name": "insta (profile mode)",
+            "cwd": "insta",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "insta (release mode)",
+            "cwd": "insta",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
         }
     ]
 }

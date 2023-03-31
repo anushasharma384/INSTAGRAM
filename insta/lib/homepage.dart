@@ -7,17 +7,17 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<String> profileImages = [
-    "Images/1.jpeg",
-    "Images/2.jpeg",
-    "Images/3.jpeg",
-    "Images/4.jpeg",
-    "Images/5.jpeg",
-    "Images/6.jpeg",
-    "Images/7.jpeg",
-    "Images/8.jpeg",
-    "Images/9.jpeg",
-    "Images/10.jpeg",
-    "Images/11.jpeg",
+    "Images/story1.jpg",
+    "Images/story2.jpeg",
+    "Images/story3.jpg",
+    "Images/story4.jfif",
+    "Images/story5.jpeg",
+    "Images/story6.jpeg",
+    "Images/story7.jpeg",
+    "Images/story8.jpeg",
+    "Images/story9.jpg",
+    "Images/story10.jpg",
+    "Images/story11.jpeg",
   ];
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,12 @@ class _HomePageState extends State<HomePage> {
                   (index) => Container(
                     padding: EdgeInsets.all(10),
                     child: CircleAvatar(
-                      backgroundImage: AssetImage(profileImages[index]),
+                      radius: 35,
+                      backgroundImage: AssetImage("Images/story_color.png"),
+                      child: CircleAvatar(
+                        radius: 32,
+                        backgroundImage: AssetImage(profileImages[index])
+                      ),
                     ),
                   ),
                 ),
